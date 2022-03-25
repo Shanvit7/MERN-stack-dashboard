@@ -1,0 +1,175 @@
+.SideBar{
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 260px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-image:url('Image.png'); /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.SideBar a {
+  padding: 30px 10px 10px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color:#818181;
+  display: block;
+  text-align: center;
+}
+
+.SideBar a:hover {
+  color:#FFFFFF;
+}
+
+.SideBar h1{
+  color:#FFFFFF;
+  text-align: center;
+}
+
+.Icon{
+  margin-right: 20px;
+}
+
+.TopNav{
+  overflow: hidden;
+  background-color:#F5F5F5;;
+}
+
+.TopNav a{
+  float: left;
+  background-color: #F5F5F5;
+  position: relative;
+  left:250px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.TopNav select {
+   float: left;
+   position: relative;
+   left: 250px;
+   background-color:#F5F5F5;
+   text-align: center;
+   text-decoration: none;
+   font-size: 12px;
+   padding: 15px 1px;
+   border: none;
+   outline: none;
+}
+
+
+#Account{
+  position: relative;
+  left:970px;
+}
+
+#DropDown{
+  position: relative;
+  left:990px;
+}
+
+#LogOut{
+  position: relative;
+  left:1010px;
+}
+
+#DashBoard{
+  font-size: x-large;
+}
+
+#Notification{
+  position: relative;
+  left:320px;
+}
+
+#Search{
+  position: relative;
+  left:390px;
+}
+
+#Notification:hover{
+  color:blue;
+}
+
+#Search:hover{
+  color: blue;
+}
+
+#Account:hover{
+  color:blue;
+}
+
+#DropDown:hover{
+  color:blue;
+}
+
+#LogOut:hover{
+  color:red;
+}
+
+.BottomNav{
+  overflow: hidden;
+  background-color:#F5F5F5;
+  bottom:0;
+  width:100%;
+  position: fixed;
+}
+
+.BottomNav a{
+  float: left;
+  background-color: #F5F5F5;
+  position: relative;
+  left:250px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#Home{
+position: relative;
+left:300px;
+}
+
+#Blog{
+position: relative;
+left:330px;
+}
+
+#Portfolio{
+position: relative;
+left:320px;
+}
+
+#Company{
+position: relative;
+left:310px;
+}
+
+#tagline{
+  position: relative;
+  left:1000px;
+}
+
+#Home:hover{
+  color:blue;
+}
+
+#Company:hover{
+  color:blue;
+}
+
+#Blog:hover{
+  color:blue;
+}
+
+#Portfolio:hover{
+  color:blue;
+}
+
+
+
