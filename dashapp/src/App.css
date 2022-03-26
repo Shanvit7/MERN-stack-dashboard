@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+
 .SideBar{
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 260px; /* Set the width of the sidebar */
@@ -21,6 +23,7 @@
 
 .SideBar a:hover {
   color:#FFFFFF;
+  background-color:rgba(0,0,0,0.5);
 }
 
 .SideBar h1{
@@ -64,17 +67,17 @@
 
 #Account{
   position: relative;
-  left:970px;
+  left:900px;
 }
 
 #DropDown{
   position: relative;
-  left:990px;
+  left:950px;
 }
 
 #LogOut{
   position: relative;
-  left:1010px;
+  left:1000px;
 }
 
 #DashBoard{
@@ -171,5 +174,49 @@ left:310px;
   color:blue;
 }
 
+.line {
+  border-top: 1px solid black;
+  position: relative;
+  top:105px;
+}
+#widget-icon{
+  position: absolute;
+  height:50px;
+  width: 50px;
+  left:25px;
+  top:40px;
+}
 
 
+#widget-1-title{
+position: absolute;
+width: 126px;
+height: 84px;
+left: 190px;
+top: 20px;
+font-family: 'Inconsolata', monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 29px;
+color: gray;
+}
+
+#widget-1-value{
+position: absolute;
+width: 110px;
+height: 39px;
+left: 180px;
+top: 45px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #000000;
+}
+
+#widget-update{
+  position: absolute;
+  top:105px;
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import {} from "react-bootstrap";
 import './App.css';
 import * as Icon from 'react-bootstrap-icons';
 

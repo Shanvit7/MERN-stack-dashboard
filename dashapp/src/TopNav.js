@@ -1,11 +1,10 @@
 import React from "react";
-import { } from "react-bootstrap";
 import './App.css';
 import * as Icon from 'react-bootstrap-icons';
 
+
 function TopNav() {
     return (
-
         <div className="TopNav">
             <a id="DashBoard">Dashboard</a>
             <a id="Notification"><Icon.AppIndicator /></a>
@@ -24,3 +23,6 @@ function TopNav() {
 }
 
 export default TopNav;
+
+
+
