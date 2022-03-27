@@ -36,8 +36,12 @@
 }
 
 .TopNav{
-  overflow: hidden;
-  background-color:#F5F5F5;;
+  overflow-x: hidden;
+  background-color:#F5F5F5;
+  width: 100%;
+  top:0;
+  position: relative;
+  left:50px;
 }
 
 .TopNav a{
@@ -115,11 +119,12 @@
 }
 
 .BottomNav{
-  overflow: hidden;
+  overflow-x: hidden;
   background-color:#F5F5F5;
   bottom:0;
   width:100%;
-  position: fixed;
+  position: relative;
+  left:50px;
 }
 
 .BottomNav a{
@@ -174,10 +179,16 @@ left:310px;
   color:blue;
 }
 
-.line {
+.widget-line {
   border-top: 1px solid black;
   position: relative;
   top:105px;
+}
+
+.bar-line{
+  border-top:1px solid black;
+  position: relative;
+  top:250px;
 }
 #widget-icon{
   position: absolute;
@@ -220,3 +231,11 @@ color: #000000;
   position: absolute;
   top:105px;
 }
+
+#bar-update{
+  position: absolute;
+  top:250px;
+}
+
+
+

@@ -12,16 +12,16 @@ function WidgetBox(props) {
                 position: 'relative',
                 top: props.top,
                 left: props.left,
-                width: 280,
-                height: 150,
+                width: props.width,
+                height: props.height,
                 backgroundColor: 'rgb(255,255,240)'
             }}
         >
             <InputLabel id="widget-1-title">{props.title}</InputLabel>
             <InputLabel id="widget-1-value">{props.sign}{props.value}</InputLabel>
             {props.icon}
-            <div className="line"></div>
-            <Button variant="text" id="widget-update"><Icon.ArrowClockwise />Update</Button>
+            <div className={props.drawLine}></div>
+            <Button variant="text" id={props.drawUpdate}><Icon.ArrowClockwise />Update</Button>
         </Box>
     )
 }
