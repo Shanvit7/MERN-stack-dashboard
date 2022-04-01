@@ -1,72 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
 
 .SideBar{
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 260px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-image:url('Image.png'); /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+  height:100%;
+  width:250px;
+  background-image: url('Image.png');
 }
 
-.SideBar a {
-  padding: 30px 10px 10px 20px;
-  text-decoration: none;
-  font-size: 25px;
-  color:#818181;
-  display: block;
-  text-align: center;
+.SideBarList{
+  height:100%;
+  padding:0;
+  width: 100%;
 }
 
-.SideBar a:hover {
+body{
+  background-color: #EEEEEE;
+}
+
+
+
+.SideBar .Row{
+  width:100%;
+  height:100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color:whitesmoke;
+}
+
+.MainPage{
+  width:100vw;
+  height: 100vh;
+  background-color: #EEEEEE;
+}
+
+#ColorOnhover:hover{
+  color:blue;
+}
+
+
+
+.SideBarList .Row :hover {
+  cursor: pointer;
   color:#FFFFFF;
   background-color:rgba(0,0,0,0.5);
+  font-size: x-large;
 }
 
-.SideBar h1{
-  color:#FFFFFF;
-  text-align: center;
+
+
+.Row #icon{
+  flex:30%;
+  display:grid;
+  place-items: center;
 }
 
-.Icon{
-  margin-right: 20px;
+.Row #title{
+  flex:50%
 }
 
-.TopNav{
-  overflow-x: hidden;
+.bg-TopNavColor{
   background-color:#F5F5F5;
-  width: 100%;
-  top:0;
-  position: relative;
-  left:50px;
 }
 
-.TopNav a{
-  float: left;
-  background-color: #F5F5F5;
-  position: relative;
-  left:250px;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
 
-.TopNav select {
-   float: left;
-   position: relative;
-   left: 250px;
-   background-color:#F5F5F5;
-   text-align: center;
-   text-decoration: none;
-   font-size: 12px;
-   padding: 15px 1px;
-   border: none;
-   outline: none;
-}
+
+
 
 
 #Account{
@@ -74,49 +73,9 @@
   left:900px;
 }
 
-#DropDown{
-  position: relative;
-  left:950px;
-}
 
-#LogOut{
-  position: relative;
-  left:1000px;
-}
 
-#DashBoard{
-  font-size: x-large;
-}
 
-#Notification{
-  position: relative;
-  left:320px;
-}
-
-#Search{
-  position: relative;
-  left:390px;
-}
-
-#Notification:hover{
-  color:blue;
-}
-
-#Search:hover{
-  color: blue;
-}
-
-#Account:hover{
-  color:blue;
-}
-
-#DropDown:hover{
-  color:blue;
-}
-
-#LogOut:hover{
-  color:red;
-}
 
 .BottomNav{
   overflow-x: hidden;
@@ -138,104 +97,18 @@
   font-size: 17px;
 }
 
-#Home{
-position: relative;
-left:300px;
-}
-
-#Blog{
-position: relative;
-left:330px;
-}
-
-#Portfolio{
-position: relative;
-left:320px;
-}
-
-#Company{
-position: relative;
-left:310px;
-}
-
-#tagline{
+.flexContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
-  left:1000px;
+  top:50px;
 }
 
-#Home:hover{
-  color:blue;
-}
-
-#Company:hover{
-  color:blue;
-}
-
-#Blog:hover{
-  color:blue;
-}
-
-#Portfolio:hover{
-  color:blue;
-}
-
-.widget-line {
-  border-top: 1px solid black;
+.flexGraph{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
-  top:105px;
+  top:200px;
 }
-
-.bar-line{
-  border-top:1px solid black;
-  position: relative;
-  top:250px;
-}
-#widget-icon{
-  position: absolute;
-  height:50px;
-  width: 50px;
-  left:25px;
-  top:40px;
-}
-
-
-#widget-1-title{
-position: absolute;
-width: 126px;
-height: 84px;
-left: 190px;
-top: 20px;
-font-family: 'Inconsolata', monospace;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 29px;
-color: gray;
-}
-
-#widget-1-value{
-position: absolute;
-width: 110px;
-height: 39px;
-left: 180px;
-top: 45px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 39px;
-color: #000000;
-}
-
-#widget-update{
-  position: absolute;
-  top:105px;
-}
-
-#bar-update{
-  position: absolute;
-  top:250px;
-}
-
-
-

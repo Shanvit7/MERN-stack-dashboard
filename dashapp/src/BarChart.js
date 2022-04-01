@@ -3,13 +3,16 @@ import ReactFC from "react-fusioncharts";
 import FusionCharts from "fusioncharts";
 import Column2D from "fusioncharts/fusioncharts.charts";
 import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
-import ChartData from './ChartData.js';
+import ChartData from './ChartData';
 
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 // Create a JSON object to store the chart configurations
+
+
+function BarChart(){
 const chartConfigs = {
     type: "column2d", // The chart type
-    width: "700", // Width of the chart
+    width: "400", // Width of the chart
     height: "400", // Height of the chart
     dataFormat: "json", // Data type
     dataSource: {
@@ -27,8 +30,13 @@ const chartConfigs = {
     }
 };
 
-function BarChart(){
-    return(<ReactFC {...chartConfigs}/>);
+return(
+    <ReactFC {...chartConfigs} />
+)
+
 }
 
-export default BarChart();
+export default BarChart;
+
+
+
