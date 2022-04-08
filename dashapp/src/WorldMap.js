@@ -19,7 +19,7 @@ ReactFC.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
 
 //STEP 2 - Define the dataset and the colorRange of the map
 
-function WorldMap(){
+function WorldMap(props){
 const dataset = [{
     "id": "NA",
     "value": ".82",
@@ -83,9 +83,9 @@ const chartConfigs = {
             "theme": "fusion"
         },
         // Aesthetics; ranges synced with the slider
-        "colorrange": colorrange,
+        "colorrange": props.color,
         // Source data as JSON --> id represents countries of the world.
-        "data": dataset
+        "data": props.data
     }
 }
  

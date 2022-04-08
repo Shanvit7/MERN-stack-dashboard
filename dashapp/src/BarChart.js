@@ -3,13 +3,12 @@ import ReactFC from "react-fusioncharts";
 import FusionCharts from "fusioncharts";
 import Column2D from "fusioncharts/fusioncharts.charts";
 import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
-import ChartData from './ChartData';
 
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 // Create a JSON object to store the chart configurations
 
 
-function BarChart(){
+function BarChart(props){
 const chartConfigs = {
     type: "column2d", // The chart type
     width: "400", // Width of the chart
@@ -26,7 +25,7 @@ const chartConfigs = {
             theme: "fusion"                 //Set the theme for your chart
         },
         // Chart Data - from step 2
-        data: ChartData
+        data: props.data
     }
 };
 

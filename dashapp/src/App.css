@@ -1,22 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
 
-.SideBar{
-  height:100%;
-  width:250px;
-  background-image: url('Image.png');
-}
-
-.SideBarList{
-  height:100%;
-  padding:0;
-  width: 100%;
-}
-
 body{
   background-color: #EEEEEE;
 }
-
-
 
 .SideBar .Row{
   width:100%;
@@ -35,66 +21,12 @@ body{
 }
 
 #ColorOnhover:hover{
-  color:blue;
+  color: blue;
 }
 
-
-
-.SideBarList .Row :hover {
-  cursor: pointer;
-  color:#FFFFFF;
-  background-color:rgba(0,0,0,0.5);
-  font-size: x-large;
-}
-
-
-
-.Row #icon{
-  flex:30%;
-  display:grid;
-  place-items: center;
-}
-
-.Row #title{
-  flex:50%
-}
 
 .bg-TopNavColor{
   background-color:#F5F5F5;
-}
-
-
-
-
-
-
-#Account{
-  position: relative;
-  left:900px;
-}
-
-
-
-
-
-.BottomNav{
-  overflow-x: hidden;
-  background-color:#F5F5F5;
-  bottom:0;
-  width:100%;
-  position: relative;
-  left:50px;
-}
-
-.BottomNav a{
-  float: left;
-  background-color: #F5F5F5;
-  position: relative;
-  left:250px;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
 }
 
 .flexContainer{
@@ -102,7 +34,7 @@ body{
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top:50px;
+  top:30px;
 }
 
 .flexGraph{
@@ -112,3 +44,4 @@ body{
   position: relative;
   top:200px;
 }
+

@@ -8,7 +8,7 @@ function CardUI(props){
         <Card style={{ width: props.width}}>
         <Card.Header>{props.title}</Card.Header>
         <Card.Body>
-                <Card.Title style={{ fontSize: '50px'}}>{props.icon}{' '}{props.data}</Card.Title>
+                <Card.Title style={{ fontSize: '50px',justifyContent:'center',alignItems:'center'}}>{props.icon}{' '}{props.data}</Card.Title>
                 <Card.Footer>
                 <Button variant="primary"><Icon.ArrowCounterclockwise/>Update</Button>
                 </Card.Footer>

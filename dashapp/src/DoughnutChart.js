@@ -3,11 +3,10 @@ import ReactFC from "react-fusioncharts";
 import FusionCharts from "fusioncharts";
 import Column2D from "fusioncharts/fusioncharts.charts";
 import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
-import ChartData from './ChartData';
 
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
-function DoughnutChart(){
+function DoughnutChart(props){
     const chartConfigs = {
         type: "pie2d", // The chart type
         width: "400", // Width of the chart
@@ -24,7 +23,7 @@ function DoughnutChart(){
                 theme: "fusion"                 //Set the theme for your chart
             },
             // Chart Data - from step 2
-            data: ChartData
+            data: props.data
         }
     }
 
