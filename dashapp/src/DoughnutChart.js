@@ -9,20 +9,20 @@ ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 function DoughnutChart(props){
     const chartConfigs = {
         type: "pie2d", // The chart type
-        width: "400", // Width of the chart
+        width: "350", // Width of the chart
         height: "400", // Height of the chart
         dataFormat: "json", // Data type
         dataSource: {
             // Chart Configuration
             chart: {
-                caption: "Countries With Most Oil Reserves [2017-18]",    //Set the chart caption
+                caption: "Countries With Most Oil Reserves [2021-22]",    //Set the chart caption
                 subCaption: "In MMbbl = One Million barrels",             //Set the chart subcaption
                 xAxisName: "Country",           //Set the x-axis name
                 yAxisName: "Reserves (MMbbl)",  //Set the y-axis name
                 numberSuffix: "K",
-                theme: "fusion"                 //Set the theme for your chart
+                theme: "fusion"                 //Set the theme chart
             },
-            // Chart Data - from step 2
+            // Chart Data 
             data: props.data
         }
     }

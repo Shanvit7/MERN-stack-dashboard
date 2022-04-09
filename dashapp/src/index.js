@@ -8,6 +8,7 @@ import {
 import MainPage from './MainPage.js';
 import ErrorPage from './ErrorPage.js';
 
+// Main routing page
 
 ReactDOM.render(
     <BrowserRouter>

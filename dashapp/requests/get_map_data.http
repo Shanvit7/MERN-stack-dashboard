@@ -1,1 +1,3 @@
 GET http://localhost:8080/get_map_data
+
+// Alternatiive for POSTMAN testing

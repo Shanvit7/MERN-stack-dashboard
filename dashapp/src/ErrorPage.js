@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button,Alert} from "react-bootstrap";
 
+// For react-routing
 
 function ErrorPage() {
     return (

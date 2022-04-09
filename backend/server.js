@@ -14,6 +14,7 @@ app.listen(port, () => {
     console.log('Server is Alive!');
 })
 
+
 app.get('/get_data',(req,res)=>{
     MongoClient.connect(uri,{useUnifiedTopology:true})
     .then(async client=>{

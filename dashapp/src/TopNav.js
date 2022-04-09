@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 import * as Icon from 'react-bootstrap-icons';
-import { Navbar,Container, NavLink,NavDropdown,Nav } from "react-bootstrap";
+import { Navbar,Container,NavDropdown,Nav } from "react-bootstrap";
 
 
 function TopNav(){
@@ -11,7 +11,7 @@ function TopNav(){
         <Navbar bg="light" expand="lg">
             <Container>
                 <Navbar.Brand>React Dashboard</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav" /> {/* For makking responsive*/ }
                 <Navbar.Collapse>
                     <Nav className="ms-auto">
                         <Nav.Link href="/error" id='ColorOnhover' className='px-3'>Notifications{' '}<Icon.AppIndicator /></Nav.Link>
