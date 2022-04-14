@@ -10,7 +10,7 @@ function ErrorPage() {
         <>
             <h1> This page is used for testing react-routing </h1>
             <h2>...Also, You have run into ERROR!</h2>
-            <Link to='/back'><Button variant="secondary">Return</Button></Link>
+            <Link to='/dashboard'><Button variant="secondary">Return</Button></Link>
         </>
     )
 }

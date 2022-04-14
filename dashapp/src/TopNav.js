@@ -4,13 +4,12 @@ import * as Icon from 'react-bootstrap-icons';
 import { Navbar,Container,NavDropdown,Nav } from "react-bootstrap";
 
 
-function TopNav(){
+function TopNav(props){
 
     return (
-
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand>
             <Container>
-                <Navbar.Brand>React Dashboard</Navbar.Brand>
+                <Navbar.Brand>{props.title}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" /> {/* For makking responsive*/ }
                 <Navbar.Collapse>
                     <Nav className="ms-auto">

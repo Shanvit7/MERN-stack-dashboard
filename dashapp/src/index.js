@@ -5,9 +5,10 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
-import MainPage from './MainPage.js';
-import ErrorPage from './ErrorPage.js';
-
+import MainPage from './MainPage';
+import ErrorPage from './ErrorPage';
+import GmapPage from './GmapPage';
+import AboutDevPage from './AboutDevPage';
 // Main routing page
 
 ReactDOM.render(
@@ -15,7 +16,9 @@ ReactDOM.render(
         <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path='/error' element={<ErrorPage />} />
-            <Route path='/back' element={<MainPage />} />
+            <Route path='/dashboard' element={<MainPage />} />
+            <Route path='/gmap' element={<GmapPage/>} />
+            <Route path='/about' element={<AboutDevPage/>} />
         </Routes>
     </BrowserRouter>,
     document.getElementById('root')

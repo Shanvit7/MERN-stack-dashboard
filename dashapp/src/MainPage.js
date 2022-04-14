@@ -17,7 +17,7 @@ import {
 } from "express/lib/application";
 
 import { Container, Col,Row} from "react-bootstrap";
-
+import SideBar from './SideBar';
 
 
 
@@ -82,8 +82,9 @@ function MainPage() {
 
 
     return (
-    <div className="MainPage" >
-        <TopNav />
+    <div className="Page" >
+        <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+        <TopNav title={'React Dashboard'}/>
      <Container style={{position:'relative',top:'20px'}} fluid>
                 <Row>
                     <Col sm><CardUI width="20rem" title="Revenue" data={revenue || noDatatxt} icon={<Icon.CashCoin style={{ color: 'green' }} />} /> </Col>
@@ -92,7 +93,6 @@ function MainPage() {
                     <Col sm><CardUI width="20rem" title="Followers" data={followers || noDatatxt} icon={<Icon.People style={{ color: "#FF69B4" }} />} /> </Col>
         </Row>
       </Container>
-
       <Container style={{position:'relative',top:'50px'}} fluid>
         <Row>
          {/* Here, icon is not bootstrap-icons, but Defined components passed as props to CardUI component*/}
@@ -101,7 +101,8 @@ function MainPage() {
                     <Col sm><CardUI title="Pie Chart" width="25rem" icon={<DoughnutChart data={GraphData || noDatatxt} />} /> </Col>
         </Row>
      </Container>
-    </div> )
+    </div>
+     )
 }
 
 export default MainPage;
