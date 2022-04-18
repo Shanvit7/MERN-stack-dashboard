@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
 
+
 body{
   background-color: #EEEEEE;
 }
@@ -10,8 +11,12 @@ body{
   background-color: #EEEEEE;
 }
 
-#ColorOnhover:hover{
-  color: blue;
+#ColorOnNav{
+  color:black;
+}
+
+#ColorOnNav:hover{
+  color:rgb(0, 102, 255);
 }
 
 
@@ -19,5 +24,40 @@ body{
   background-color:#F5F5F5;
 }
 
+.tasks {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+}
 
+.responsive-map {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
 
+.responsive-map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+@media only screen and (max-width: 600px){
+  .responsive-map{
+    height: 700px;
+  }
+
+  .responsive-alert{
+    position: relative;
+    left:-600px;
+  }
+
+  .responsive-title{
+    position: relative;
+    left:100px;
+  }
+
+}

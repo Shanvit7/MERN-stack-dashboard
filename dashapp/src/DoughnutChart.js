@@ -9,7 +9,7 @@ ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 function DoughnutChart(props){
     const chartConfigs = {
         type: "pie2d", // The chart type
-        width: "350", // Width of the chart
+        width: "300", // Width of the chart
         height: "400", // Height of the chart
         dataFormat: "json", // Data type
         dataSource: {

@@ -18,6 +18,8 @@ import {
 
 import { Container, Col,Row} from "react-bootstrap";
 import SideBar from './SideBar';
+import BottomNav from "./BottomNav";
+import { motion } from 'framer-motion/dist/framer-motion';
 
 
 
@@ -34,7 +36,7 @@ function MainPage() {
 
     // Data for widget
     const loadData = async () => {
-        const raw_data = await fetch('http://localhost:8080/get_data', {
+        const raw_data = await fetch('/get_data', {
             method: 'GET',
             headers: {
                 "Content-Type": "application/json"
@@ -49,7 +51,7 @@ function MainPage() {
     }
     // Data for Barchart & DoughnutChart 
     const loadGraphData = async () => {
-        const raw_data = await fetch('http://localhost:8080/get_graph_data', {
+        const raw_data = await fetch('/get_graph_data', {
             method: 'GET',
             headers: {
                 "Content-Type": "application/json"
@@ -61,8 +63,9 @@ function MainPage() {
     }
     // Data for HeatMap
     const loadMapData = async () => {
-        const raw_data = await fetch('http://localhost:8080/get_map_data', {
+        const raw_data = await fetch('/get_map_data', {
             method: 'GET',
+            mode:'cors',
             headers: {
                 "Content-Type": "application/json"
             }
@@ -85,22 +88,29 @@ function MainPage() {
     <div className="Page" >
         <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
         <TopNav title={'React Dashboard'}/>
+    <motion.div initial={{y:-450}} animate={{y:10}} transition={{delay:0.3,duration:0.4}}>
      <Container style={{position:'relative',top:'20px'}} fluid>
                 <Row>
-                    <Col sm><CardUI width="20rem" title="Revenue" data={revenue || noDatatxt} icon={<Icon.CashCoin style={{ color: 'green' }} />} /> </Col>
-                    <Col sm><CardUI width="20rem" title="Activity" data={activity || noDatatxt} icon={<Icon.Activity style={{ color: 'blue' }} />} /> </Col>
-                    <Col sm><CardUI width="20rem" title="Uploads" data={uploads || noDatatxt} icon={<Icon.CloudArrowUp style={{ color: '#ADD8E6' }} />} /></Col>
-                    <Col sm><CardUI width="20rem" title="Followers" data={followers || noDatatxt} icon={<Icon.People style={{ color: "#FF69B4" }} />} /> </Col>
-        </Row>
+                   
+                <Col sm><CardUI width="20rem" title="Revenue" data={revenue || noDatatxt} icon={<Icon.CashCoin style={{ color: 'green' }} />} /> </Col>
+                <Col sm><CardUI width="20rem" title="Activity" data={activity || noDatatxt} icon={<Icon.Activity style={{ color: 'blue' }} />} /> </Col>
+                <Col sm><CardUI width="20rem" title="Uploads" data={uploads || noDatatxt} icon={<Icon.CloudArrowUp style={{ color: '#ADD8E6' }} />} /></Col>
+                <Col sm><CardUI width="20rem" title="Followers" data={followers || noDatatxt} icon={<Icon.People style={{ color: "#FF69B4" }} />} /> </Col>
+               </Row>
       </Container>
-      <Container style={{position:'relative',top:'50px'}} fluid>
+      </motion.div>
+
+      <Container style={{position:'relative',top:'100px'}} fluid>
+       <motion.div initial={{ y: 500 }} animate={{ y: 10 }} transition={{ delay: 0.5, duration: 0.5 }} >
         <Row>
          {/* Here, icon is not bootstrap-icons, but Defined components passed as props to CardUI component*/}
-                    <Col sm><CardUI title="Bar Graph" width="25rem" icon={<BarChart data={GraphData || noDatatxt} />} /> </Col>
+                    <Col sm><CardUI title="Bar Graph" width="20rem" icon={<BarChart data={GraphData || noDatatxt} />} /> </Col>
                     <Col sm><CardUI title="World Map" width="20rem" icon={<WorldMap data={MapData || noDatatxt} color={MapColor || '#0000FF'} />} /> </Col>
-                    <Col sm><CardUI title="Pie Chart" width="25rem" icon={<DoughnutChart data={GraphData || noDatatxt} />} /> </Col>
+                    <Col sm><CardUI title="Pie Chart" width="20rem" icon={<DoughnutChart data={GraphData || noDatatxt} />} /> </Col>
         </Row>
+       </motion.div>
      </Container>
+            <div style={{ position: "relative", top: '200px' }}><BottomNav/></div>
     </div>
      )
 }

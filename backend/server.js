@@ -6,13 +6,24 @@ const cors = require('cors');
 const { MongoClient } = require('mongodb');
 const uri = "mongodb+srv://Shanvit:1234@testCluster.1dq2f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const client = new MongoClient(uri);
+const path = require('path');
+
+/*
+app.use(cors({
+    origin:['http://localhost:8080','http://localhost:3000'],
+    methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH','OPTIONS'],
+    allowedHeaders: [' Origin, X-Api-Key, X-Requested-With, Content-Type, Accept, Authorization']
+}));
+*/
 
 app.use(cors());
 app.use(bodyParser.json());
 
+
 app.listen(port, () => {
     console.log('Server is Alive!');
 })
+
 
 
 app.get('/get_data',(req,res)=>{

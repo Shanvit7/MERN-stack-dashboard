@@ -9,10 +9,9 @@ const SideBar=()=>{
      <Menu>
          <a href="/dashboard"><Icon.PieChart />{' '}Dashboard</a>
          <a href="/about"><Icon.Person />{' '}About developer</a>
-         <a href="/error"><Icon.ListColumns />{' '}To do List</a>
+         <a href="/todo"><Icon.ListColumns />{' '}To do List</a>
          <a href="/gmap"><Icon.GeoAlt />{' '}Location</a>
-         <a href="/error"><Icon.BellFill />{' '}Notifications</a>
-         <a href="/error"><Icon.ShareFill />{' '}Share</a>
+         <a href="/notifications"><Icon.BellFill />{' '}Notifications</a>
      </Menu>
    )
 }

@@ -2,11 +2,13 @@ import React from "react";
 import './App.css'
 import * as Icon from 'react-bootstrap-icons';
 import{Card,Button} from 'react-bootstrap';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 // Widget 
 
 function CardUI(props){
     return(
+        <motion.div  whileHover={{scale:1.1}}>
         <Card style={{ maxWidth: props.width}}>
         <Card.Header>{props.title}</Card.Header>
         <Card.Body>
@@ -17,6 +19,7 @@ function CardUI(props){
         </Card.Body>
 
     </Card>
+    </motion.div>
     )
 }
 

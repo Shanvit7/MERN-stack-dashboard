@@ -10,7 +10,7 @@ ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 function BarChart(props){
 const chartConfigs = {
     type: "column2d", // The chart type
-    width: "300", // Width of the chart
+    width: "270", // Width of the chart
     height: "400", // Height of the chart
     dataFormat: "json", // Data type
     dataSource: {

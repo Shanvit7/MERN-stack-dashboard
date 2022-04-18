@@ -6,19 +6,25 @@ import {
     Route,
 } from "react-router-dom";
 import MainPage from './MainPage';
-import ErrorPage from './ErrorPage';
+import DummyPage from './DummyPage';
 import GmapPage from './GmapPage';
 import AboutDevPage from './AboutDevPage';
+import ToDoPage from './ToDoPage';
+import NotificationPage from './NotificationPage';
+import LogOutBox from './LogOutBox';
 // Main routing page
 
 ReactDOM.render(
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path='/error' element={<ErrorPage />} />
+            <Route path="/" element={<MainPage />} /> 
+            <Route path='/void' element={<DummyPage />} /> {/* For testing react routing*/}
             <Route path='/dashboard' element={<MainPage />} />
             <Route path='/gmap' element={<GmapPage/>} />
             <Route path='/about' element={<AboutDevPage/>} />
+            <Route path='/todo' element={<ToDoPage />} />
+            <Route path='/notifications' element={<NotificationPage/>} />
+            <Route path='/logout' element={<LogOutBox/>}/>
         </Routes>
     </BrowserRouter>,
     document.getElementById('root')
