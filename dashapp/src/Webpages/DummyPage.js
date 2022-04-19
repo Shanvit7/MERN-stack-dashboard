@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button} from "react-bootstrap";
+import { Button } from "react-bootstrap";
+import '../StyleSheets/App.css';
 
 // For links not in use.
 

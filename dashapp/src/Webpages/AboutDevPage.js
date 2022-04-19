@@ -1,16 +1,17 @@
 import React from 'react';
-import TopNav from './TopNav';
-import SideBar from './SideBar';
+import TopNav from '../PageComponents/TopNav';
+import SideBar from '../PageComponents/SideBar';
 import { Carousel } from 'react-bootstrap';
-import BottomNav from './BottomNav';
-import picture1 from './Slide1.jpg';
-import picture2 from './Slide2.webp';
-import picture3 from './Slide3.png';
-import picture4 from './Slide4.png';
-import picture5 from './Slide5.webp';
+import BottomNav from '../PageComponents/BottomNav';
+import picture1 from '../CarouselSlides/Slide1.jpg';
+import picture2 from '../CarouselSlides/Slide2.webp';
+import picture3 from '../CarouselSlides/Slide3.png';
+import picture4 from '../CarouselSlides/Slide4.png';
+import picture5 from '../CarouselSlides/Slide5.webp';
 import { motion } from 'framer-motion/dist/framer-motion';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../StyleSheets/App.css';
+
 
 const AboutDevPage = () => {
 
@@ -37,7 +38,7 @@ const AboutDevPage = () => {
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100"
-                                    style={{ height: '700px'}}
+                                    style={{ height: '700px' }}
                                     src={picture2}
                                     alt="Second slide"
                                 />
@@ -49,7 +50,7 @@ const AboutDevPage = () => {
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100"
-                                    style={{ height: '700px'}}
+                                    style={{ height: '700px' }}
                                     src={picture3}
                                     alt="Third slide"
                                 />
@@ -61,7 +62,7 @@ const AboutDevPage = () => {
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100"
-                                    style={{ height: '700px'}}
+                                    style={{ height: '700px' }}
                                     src={picture4}
                                     alt="Fourth slide"
                                 />
@@ -73,7 +74,7 @@ const AboutDevPage = () => {
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100"
-                                    style={{ height: '700px'}}
+                                    style={{ height: '700px' }}
                                     src={picture5}
                                     alt="Fifth slide"
                                 />

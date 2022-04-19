@@ -5,13 +5,13 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
-import MainPage from './MainPage';
-import DummyPage from './DummyPage';
-import GmapPage from './GmapPage';
-import AboutDevPage from './AboutDevPage';
-import ToDoPage from './ToDoPage';
-import NotificationPage from './NotificationPage';
-import LogOutBox from './LogOutBox';
+import MainPage from './Webpages/MainPage';
+import DummyPage from './Webpages/DummyPage';
+import GmapPage from './Webpages/GmapPage';
+import AboutDevPage from './Webpages/AboutDevPage';
+import ToDoPage from './Webpages/ToDoPage';
+import NotificationPage from './Webpages/NotificationPage';
+import LogOutBox from './PageComponents/LogOutBox';
 // Main routing page
 
 ReactDOM.render(

@@ -1,9 +1,9 @@
 import React from 'react';
-import TopNav from './TopNav';
-import SideBar from './SideBar';
-import BottomNav from './BottomNav';
+import TopNav from '../PageComponents/TopNav';
+import SideBar from '../PageComponents/SideBar';
+import BottomNav from '../PageComponents/BottomNav';
 import { Button, Card, Form, Modal } from 'react-bootstrap';
-import './App.css';
+import '../StyleSheets/App.css';
 import { useState } from 'react';
 import { motion } from 'framer-motion/dist/framer-motion';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,7 +15,7 @@ import * as Icon from 'react-bootstrap-icons';
 const ToDoPage = () => {
 
     const [tasks, setTask] = useState([{ // Default task when page loaded
-        text: "This is a sampe todo",
+        text: "Have a good day !",
         isDone: false
     }]);
 
