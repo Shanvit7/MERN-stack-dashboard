@@ -18,7 +18,7 @@ const AboutDevPage = () => {
         <div className='Page'>
             <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
             <TopNav title={'About Dev'} />
-            <motion.div className='container-fluid' animate={{ rotate: 360 }} >
+            <motion.div className='container-fluid' animate={{ rotate: 360 }} > {/*Rotates carousel by 360 deg when page loaded*/}
                 <div className="row">
                     <div className="col-12">
                         <Carousel>

@@ -1,9 +1,9 @@
 import React from 'react';
-import{stack as Menu} from 'react-burger-menu';
+import{stack as Menu} from 'react-burger-menu'; // Stack  animation when opening sidebar
 import * as Icon from 'react-bootstrap-icons';
 import './SideBar.css';
 
-
+// React Burger Menu SideBar 
 const SideBar=()=>{
    return (
      <Menu>

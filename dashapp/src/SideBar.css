@@ -44,7 +44,7 @@ height: 100%;
 
 /* General sidebar styles */
 .bm-menu {
-    background: url('SideBarImage.png');
+    background: url('SideBarImage.png'); /* Image for SideBar */
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
 }

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button} from "react-bootstrap";
 
-// For react-routing
+// For links not in use.
 
 function DummyPage() {
     return (

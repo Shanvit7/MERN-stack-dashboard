@@ -5,6 +5,7 @@ import { useState } from "react";
 const LogOutBox=()=>{
     const [show,setShow]=useState(true);
     const handleClose=()=> setShow(false);
+
     return(
     <Modal show={show} onHide={handleClose} backdrop="static" keyboard="false">
         <Modal.Header>
@@ -14,10 +15,8 @@ const LogOutBox=()=>{
             Are you sure you want to log out??
         </Modal.Body>
         <Modal.Footer>
-            <Button variant="primary" href='/dashboard' >Close</Button>
-            <Button variant="success" onClick={handleClose}>
-                Proceed
-            </Button>
+            <Button variant="primary" href='/dashboard' >Close</Button>   
+            <Button variant="success" onClick={handleClose}> Proceed</Button> {/* User decides to log out*/}
         </Modal.Footer>
     </Modal>
 )

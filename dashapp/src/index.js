@@ -17,8 +17,8 @@ import LogOutBox from './LogOutBox';
 ReactDOM.render(
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<MainPage />} /> 
-            <Route path='/void' element={<DummyPage />} /> {/* For testing react routing*/}
+            <Route path="/" element={<MainPage />} /> {/* Dashboard Page*/}
+            <Route path='/void' element={<DummyPage />} /> {/* For  links not in use */}
             <Route path='/dashboard' element={<MainPage />} />
             <Route path='/gmap' element={<GmapPage/>} />
             <Route path='/about' element={<AboutDevPage/>} />

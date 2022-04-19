@@ -4,7 +4,7 @@ import * as Icon from 'react-bootstrap-icons';
 import{Card,Button} from 'react-bootstrap';
 import { motion } from 'framer-motion/dist/framer-motion';
 
-// Widget 
+// Box for displaying data in Dashboard
 
 function CardUI(props){
     return(
