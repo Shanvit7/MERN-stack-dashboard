@@ -6,7 +6,7 @@ body{
 
 .Page{ /* For all pages */
   width:100vw;
-  height: 100vh;
+  height: 130vh;
   background-color: #EEEEEE; 
 }
 
@@ -69,6 +69,10 @@ font-family: 'Fugaz One',cursive;
 
   .responsive-col{
     padding: 20px;
+  }
+
+  .Page{
+    height:150vh;
   }
 
 }

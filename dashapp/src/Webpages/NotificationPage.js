@@ -51,10 +51,7 @@ const NotificationPage = () => {
         </ToastContainer>
       </motion.div>
 
-      <div style={{ position: "relative", top: '700px' }}>
         <BottomNav />
-      </div>
-
 
     </div>
   )

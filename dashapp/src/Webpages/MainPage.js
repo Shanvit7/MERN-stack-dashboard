@@ -106,11 +106,10 @@ function MainPage() {
                     </Row>
                 </motion.div>
             </Container>
+            <BottomNav />
+               
 
-            <div style={{ position: "relative", top: '200px' }}>
-                <BottomNav />
-            </div>
-
+               
         </div>
     )
 }

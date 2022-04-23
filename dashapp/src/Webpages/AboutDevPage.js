@@ -87,11 +87,7 @@ const AboutDevPage = () => {
                     </div>
                 </div>
             </motion.div>
-
-            <div style={{ position: 'relative', top: '100px' }}>
                 <BottomNav />
-            </div>
-
         </div>
     )
 

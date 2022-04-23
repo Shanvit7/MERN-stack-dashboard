@@ -123,11 +123,7 @@ const ToDoPage = () => {
                     ))}
                 </div>
             </div>
-
-
-            <div style={{ position: "relative", top: '500px' }}>
                 <BottomNav />
-            </div>
         </div>
     )
 
