@@ -1,6 +1,5 @@
 import React from 'react';
 import TopNav from '../PageComponents/TopNav';
-import SideBar from '../PageComponents/SideBar';
 import BottomNav from '../PageComponents/BottomNav';
 import { Button, Card, Form, Modal } from 'react-bootstrap';
 import '../StyleSheets/App.css';
@@ -8,6 +7,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion/dist/framer-motion';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as Icon from 'react-bootstrap-icons';
+import '../StyleSheets/App.css';
 
 
 
@@ -102,13 +102,12 @@ const ToDoPage = () => {
 
     return ( //  Return for ToDoPage  component
         <div className="Page">
-            <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
             <TopNav title={'To Do list'} />
 
-            <div className="container">
-                <motion.h1 initial={{ y: -250 }} animate={{ y: 10, color: 'rgb(0,102,255)' }} transition={{ delay: 0.5, duration: 0.5 }} className="text-center mb-4">Tasks to do ...</motion.h1>
-                <ToDoForm addTask={addTask} />
-                <div>
+            <div className='container'>
+                <motion.h1 initial={{ y: -250 }} animate={{ y: 70, color: 'rgb(0,102,255)' }} transition={{ delay: 0.5, duration: 0.5 }} className="text-center mb-4">Tasks to do ...</motion.h1>
+                <motion.div initial={{y:-250}} animate={{y:50}} ><ToDoForm addTask={addTask} /></motion.div>
+                <motion.div  className='adjust-tasks' initial={{y:-250}} animate={{y:50}} >
                     {tasks.map((task, index) => (
                         <Card>
                             <Card.Body>
@@ -121,7 +120,8 @@ const ToDoPage = () => {
                             </Card.Body>
                         </Card>
                     ))}
-                </div>
+                </motion.div>
+
             </div>
                 <BottomNav />
         </div>

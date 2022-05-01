@@ -2,7 +2,6 @@ import React from "react";
 import TopNav from "../PageComponents/TopNav";
 import BottomNav from "../PageComponents/BottomNav";
 import * as Icon from 'react-bootstrap-icons';
-import SideBar from "../PageComponents/SideBar";
 import { Toast, ToastContainer } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { motion } from 'framer-motion/dist/framer-motion';
@@ -36,10 +35,8 @@ const NotificationPage = () => {
 
   return (
     <div className="Page">
-      <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
       <TopNav title={'Notifications'} />
-
-      <motion.div className='responsive-alert' style={{ position: 'absolute', x: '600px' }} initial={{ y: -1500 }} animate={{ y: 20 }} transition={{ delay: 0.5, duration: 0.5 }}>
+      <motion.div  className='responsive-alert' style={{ position:'absolute',x: '550px', padding:'70px' }} initial={{ y: -1500 }} animate={{ y: 20 }} transition={{ delay: 0.5, duration: 0.5 }}>
         <ToastContainer  >
           <Notification whileAgo={'Few seconds ago...'} message={'This website still needs improvement!'} />
           <Notification whileAgo={'Few minutes ago...'} message={'This is dummy alert'} />

@@ -1,79 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-body{
+
+body {
   background-color: #EEEEEE;
 }
 
-.Page{ /* For all pages */
-  width:100vw;
-  height: 130vh;
-  background-color: #EEEEEE; 
+.Page {
+  /* For all pages */
+  width: 100vw;
+  height: 100vh;
+  background-color: #EEEEEE;
 }
 
-#ColorOnNav{
-  color:black; /* For Nav links */
+#ColorOnNav {
+  color: black;
+  /* For Nav links */
   font-family: 'Kanit', sans-serif;
 }
 
-#ColorOnNav:hover{
-  color:rgb(0, 102, 255);
+#ColorOnNav:hover {
+  color: rgb(0, 102, 255);
 }
 
 
-.bg-TopNavColor{
-  background-color:#F5F5F5;
+.bg-TopNavColor {
+  background-color: #F5F5F5;
 }
+
 
 .tasks {
   align-items: center;
   display: flex;
   font-size: 18px;
   justify-content: space-between;
+  padding: '20px';
 }
 
-.responsive-map {
-  overflow: hidden;
-  padding-bottom: 56.25%;
+
+.default-map {
   position: relative;
-  height: 0;
+  top: 100px;
 }
 
-.responsive-map iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+.adjust-tasks {
+  padding: 100px;
 }
 
-.responsive-title{
-font-family: 'Fugaz One',cursive;
+.adjust-charts {
+  padding: 150px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   /* Adjusting for Mobile view*/
 
-  .responsive-map{
-    height: 700px; /* Gmap */
+  .adjust-tasks {
+    padding: 10px;
   }
 
-  .responsive-alert{
+  .default-map {
+    height: 50px;
+    /* Gmap */
+    width: 100px;
+  }
+
+  .responsive-alert {
     position: relative;
-    left:-595px; /* Notification Page */
+    left: -595px;
+    /* Notification Page */
   }
 
-  .responsive-title{
+  .responsive-title {
     position: relative;
-    left:100px; /* Title on Top NavBar */
+    left: 100px;
+    /* Title on Top NavBar */
   }
 
-  .responsive-col{
+  .responsive-col {
     padding: 20px;
   }
 
-  .Page{
-    height:150vh;
+  .Page {
+    height: 150vh;
+  }
+
+  .adjust-charts {
+    padding: 5px;
+    padding-bottom: 10px;
   }
 
 }
-

@@ -19,7 +19,7 @@ ReactFC.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
 function WorldMap(props){
 const chartConfigs = {
     type: 'world', // The chart type
-    width: '300', // Width of the chart
+    width: '300', // Width of the chart 300
     height: '400', // Height of the chart
     dataFormat: 'json', // Data type
     dataSource: {

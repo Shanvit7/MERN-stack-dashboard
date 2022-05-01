@@ -1,6 +1,5 @@
 import React from 'react';
 import TopNav from '../PageComponents/TopNav';
-import SideBar from '../PageComponents/SideBar';
 import { Carousel } from 'react-bootstrap';
 import BottomNav from '../PageComponents/BottomNav';
 import picture1 from '../CarouselSlides/Slide1.jpg';
@@ -17,7 +16,6 @@ const AboutDevPage = () => {
 
     return (
         <div className='Page'>
-            <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
             <TopNav title={'About Dev'} />
             <motion.div className='container-fluid' animate={{ rotate: 360 }} > {/*Rotates carousel by 360 deg when page loaded*/}
                 <div className="row">

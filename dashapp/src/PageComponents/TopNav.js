@@ -3,12 +3,13 @@ import '../StyleSheets/App.css';
 import * as Icon from 'react-bootstrap-icons';
 import { Navbar, Container, NavDropdown, Nav } from "react-bootstrap";
 import { motion } from 'framer-motion/dist/framer-motion';
-
+import SideBar from '../PageComponents/SideBar';
 
 function TopNav(props) {
 
     return (
-        <Navbar bg="light" expand='sm'>
+        <Navbar bg="light" expand='sm' fixed='top'>
+            <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
             <Container>
                 <Navbar.Brand className='responsive-title' style={{ color: 'rgb(0, 102, 255)' }}>{props.title}</Navbar.Brand> {/* Title on Top NavBar */}
                 <Navbar.Toggle aria-controls="basic-navbar-nav" /> {/* For makking responsive*/}

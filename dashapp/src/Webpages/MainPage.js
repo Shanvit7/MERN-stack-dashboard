@@ -13,7 +13,6 @@ import {
 } from 'react';
 
 import { Container, Col, Row } from "react-bootstrap";
-import SideBar from '../PageComponents/SideBar';
 import BottomNav from "../PageComponents/BottomNav";
 import { motion } from 'framer-motion/dist/framer-motion';
 import '../StyleSheets/App.css';
@@ -83,9 +82,8 @@ function MainPage() {
 
     return (
         <div className="Page" >
-            <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
             <TopNav title={'React Dashboard'} />
-            <motion.div initial={{ y: -450 }} animate={{ y: 10 }} transition={{ delay: 0.3, duration: 0.4 }}> {/* Animations */}
+            <motion.div initial={{ y: -450 }} animate={{ y: 100 }} transition={{ delay: 0.3, duration: 0.4 }}> {/* Animations */}
                 <Container style={{ position: 'relative', top: '20px' }} fluid='sm'>
                     <Row>
                         <Col className='responsive-col' sm={3}><CardUI width="20rem" title="Revenue" data={revenue || noDatatxt} icon={<Icon.CashCoin style={{ color: 'green' }} />} /> </Col>
@@ -96,8 +94,8 @@ function MainPage() {
                 </Container>
             </motion.div>
 
-            <Container style={{ position: 'relative', top: '100px' }} fluid='sm'>
-                <motion.div initial={{ y: 500 }} animate={{ y: 10 }} transition={{ delay: 0.5, duration: 0.5 }} >
+            <Container className='adjust-charts' style={{ position: 'relative', top: '100px' }} fluid='sm'>
+                <motion.div initial={{ y: 500 }} animate={{ y: 50 }} transition={{ delay: 0.5, duration: 0.5 }} >
                     <Row>
                         {/* Here, icon is not bootstrap-icons, but Defined components passed as props to CardUI component*/}
                         <Col className='responsive-col' sm><CardUI title="Bar Graph" width="20rem" icon={<BarChart data={GraphData || noDatatxt} />} /> </Col>
@@ -107,9 +105,7 @@ function MainPage() {
                 </motion.div>
             </Container>
             <BottomNav />
-               
-
-               
+                             
         </div>
     )
 }
