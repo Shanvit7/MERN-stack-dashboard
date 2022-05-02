@@ -91,7 +91,7 @@ const ToDoPage = () => {
     const Todo = ({ task, index, isTaskDone }) => {
         return (
             <motion.div className="tasks" animate={{ y: 15 }}>
-                <span style={{ textDecoration: task.isDone ? "line-through" : "" }}>{task.text}</span>
+                <div title={task.text} style={{width:'50%',textDecoration: task.isDone ? "line-through" : "" }}>{task.text}</div>
                 <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                     <Button variant="outline-success" onClick={() => isTaskDone(index)}><Icon.CheckLg /></Button>{' '}
                     <RemoveTaskbtn index={index} />
@@ -101,13 +101,13 @@ const ToDoPage = () => {
     }
 
     return ( //  Return for ToDoPage  component
-        <div className="Page">
+        <div className='Page'>
             <TopNav title={'To Do list'} />
 
-            <div className='container'>
+            <div className='container' style={{ height: '90vh', overflow: 'auto', minWidth: '100%', paddingLeft: '50px', paddingRight: '50px' }}>
                 <motion.h1 initial={{ y: -250 }} animate={{ y: 70, color: 'rgb(0,102,255)' }} transition={{ delay: 0.5, duration: 0.5 }} className="text-center mb-4">Tasks to do ...</motion.h1>
-                <motion.div initial={{y:-250}} animate={{y:50}} ><ToDoForm addTask={addTask} /></motion.div>
-                <motion.div  className='adjust-tasks' initial={{y:-250}} animate={{y:50}} >
+                <motion.div initial={{ y: -250 }} animate={{ y: 50 }} ><ToDoForm addTask={addTask} /></motion.div>
+                <motion.div className='adjust-tasks' initial={{ y: -250 }} animate={{ y: 50 }} >
                     {tasks.map((task, index) => (
                         <Card>
                             <Card.Body>
@@ -123,7 +123,7 @@ const ToDoPage = () => {
                 </motion.div>
 
             </div>
-                <BottomNav />
+            <BottomNav />
         </div>
     )
 
