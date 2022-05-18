@@ -19,7 +19,7 @@ const GmapPage = () => {
     return (
         <div className='Page'>
             <TopNav title={'Google Map'} />
-            <motion.h2 initial={{ y: -250}} animate={{ fontSize: "30px", color: 'rgb(0,102,255)', y: 170}} transition={{ delay:2,type: 'spring', stiffness: 500 }}>Visit us at above address : </motion.h2>
+            <motion.h2 initial={{ y: -250}} animate={{ fontSize: "30px", color: 'orange', y: 170}} transition={{ delay:2,type: 'spring', stiffness: 500 }}>Visit us at above address : </motion.h2>
             {/* <Gmap/> Gmap used here */}
             <Gmap />
             <BottomNav/>

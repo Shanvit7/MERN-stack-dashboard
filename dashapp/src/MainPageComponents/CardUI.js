@@ -14,7 +14,7 @@ function CardUI(props) {
                 <Card.Body>
                     <Card.Title style={{ fontSize: '50px', justifyContent: 'center', alignItems: 'center' }}>{props.icon}{' '}{props.data}</Card.Title>
                     <Card.Footer>
-                        <Button variant="primary"><Icon.ArrowCounterclockwise />Update</Button>
+                        <Button variant='danger'><Icon.ArrowCounterclockwise />Update</Button>
                     </Card.Footer>
                 </Card.Body>
 

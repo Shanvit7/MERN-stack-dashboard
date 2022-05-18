@@ -14,7 +14,7 @@
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-    background:rgb(0,102,255);
+    background:rgb(244, 171, 3);
 }
 
 /* Position and sizing of clickable cross button */
@@ -45,7 +45,7 @@ top:0;
 
 /* General sidebar styles */
 .bm-menu {
-    background: url('SideBarImage.png'); /* Image for SideBar */
+    background: url('SideBarImage.jpg'); /* Image for SideBar */
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
 }
@@ -61,10 +61,10 @@ top:0;
     padding: 0.8em;
 }
 
-/* Individual item */
+/* Individual item   #d1d1d1; */
 .bm-item {
     display: inline-block;
-    color: #d1d1d1;
+    color: rgba(30, 66, 109, 0.692);
     margin-bottom: 50px;
     text-align: left;
     text-decoration: none;
@@ -83,5 +83,5 @@ top:0;
 
 .bm-item:hover{
     font-size: 20px;
-    color: #ffffff;
+    color: black;
 }

@@ -12,13 +12,13 @@ body {
 }
 
 #ColorOnNav {
-  color: black;
+  color: orange;
   /* For Nav links */
   font-family: 'Kanit', sans-serif;
 }
 
 #ColorOnNav:hover {
-  color: rgb(0, 102, 255);
+  color: rgb(236, 159, 15);
 }
 
 

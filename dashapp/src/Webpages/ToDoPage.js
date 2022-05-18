@@ -50,7 +50,7 @@ const ToDoPage = () => {
                 </Form.Group>
 
                 <motion.div animate={{ y: 10 }}>
-                    <Button variant="primary mb-3" type="submit" style={{ backgroundColor: 'green' }}>
+                    <Button variant='danger' type="submit" style={{backgroundColor: 'rgb(255,51,51)' }}>
                         <motion.div whileHover={{ scale: 0.8 }}>
                             Add <Icon.PlusCircle />
                         </motion.div>
@@ -105,7 +105,7 @@ const ToDoPage = () => {
             <TopNav title={'To Do list'} />
 
             <div className='container' style={{ height: '90vh', overflow: 'auto', minWidth: '100%', paddingLeft: '50px', paddingRight: '50px' }}>
-                <motion.h1 initial={{ y: -250 }} animate={{ y: 70, color: 'rgb(0,102,255)' }} transition={{ delay: 0.5, duration: 0.5 }} className="text-center mb-4">Tasks to do ...</motion.h1>
+                <motion.h1 initial={{ y: -250 }} animate={{ y: 70, color: 'orange' }} transition={{ delay: 0.5, duration: 0.5 }} className="text-center mb-4">Tasks to do ...</motion.h1>
                 <motion.div initial={{ y: -250 }} animate={{ y: 50 }} ><ToDoForm addTask={addTask} /></motion.div>
                 <motion.div className='adjust-tasks' initial={{ y: -250 }} animate={{ y: 50 }} >
                     {tasks.map((task, index) => (
